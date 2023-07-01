@@ -25,6 +25,7 @@ class City(BaseModel):
     name = models.CharField(max_length=100)
     country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='cities')
 
+
     def __str__(self):
         return self.name
 
@@ -33,9 +34,15 @@ class City(BaseModel):
 
 class Category(BaseModel):
     name = models.CharField(max_length=100)
+    image = models.ImageField(upload_to='category_images/')
 
     def __str__(self):
         return self.name
+    
+    def category_ads_number(self):
+        queryset = Ad.objects.filter(subcategory__category=self)
+        return queryset.count()
+
 
 class Subcategory(BaseModel):
     name = models.CharField(max_length=100)
@@ -49,6 +56,7 @@ class Ad(BaseModel):
     description = models.TextField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
     location = models.ForeignKey(City, on_delete=models.CASCADE)
+
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     subcategory = models.ForeignKey(Subcategory, on_delete=models.CASCADE)
