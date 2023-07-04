@@ -1,28 +1,25 @@
 <template>
-    <div class="main-wrapper">
-        <layouts></layouts>
+  <div class="main-wrapper">
+    <layouts></layouts>
 
-        <div class="page-wrapper">
-            <aboutbreadcrumb />
-            
-            <aboutcontent />
+    <div class="page-wrapper">
+      <aboutbreadcrumb />
 
-            <aboutpopular />
+      <aboutcontent />
 
-            <indexcta />
+      <aboutpopular />
 
-            <indexclient />
+      <indexcta />
 
-            <aboutpartners />
+      <indexclient />
 
-            <foot />
+      <aboutpartners />
 
-            <scroll />
-        </div>
+      <foot />
+
+      <scroll />
     </div>
+  </div>
 </template>
 
-<script>
-
-</script>
-
+<script></script>

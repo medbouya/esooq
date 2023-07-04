@@ -1,19 +1,19 @@
 <template>
-    <div class="main-wrapper">
-        <navbarfive />
+  <div class="main-wrapper">
+    <navbarfive />
 
-        <div class="page-wrapper">
-            <indexdiscover />
+    <div class="page-wrapper">
+      <indexdiscover />
 
-            <indexbusiness />
+      <indexbusiness />
 
-            <indexfivespace />
+      <indexfivespace />
 
-            <indexfiveclient />
+      <indexfiveclient />
 
-            <indexfivefooter />
+      <indexfivefooter />
 
-            <scroll />
-        </div>
+      <scroll />
     </div>
+  </div>
 </template>

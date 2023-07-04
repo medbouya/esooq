@@ -1,36 +1,33 @@
 <template>
-    <div class="main-wrapper">
-        <layouts></layouts>
-        
-        <div class="page-wrapper">
-           
-                <indexexplore />
-                
-                <indexcategory />
-                
-                <indexfeatured />
+  <div class="main-wrapper">
+    <layouts></layouts>
 
-                <indexpopular />
+    <div class="page-wrapper">
+      <indexexplore />
 
-                <indexads />
+      <indexcategory />
 
-                <indexcta />
+      <indexfeatured />
 
-                <indexclient />
-            
-                <indexpartners />
+      <indexpopular />
 
-                <indexpricing />
+      <indexads />
 
-                <indexblog />
+      <indexcta />
 
-                <foot />
+      <indexclient />
 
-                <scroll />
-        </div>
+      <indexpartners />
+
+      <indexpricing />
+
+      <indexblog />
+
+      <foot />
+
+      <scroll />
     </div>
+  </div>
 </template>
 
-<script>
-
-</script>
+<script></script>

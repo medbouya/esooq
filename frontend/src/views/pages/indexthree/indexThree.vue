@@ -1,26 +1,25 @@
 <template>
-    <div class="main-wrapper">
-        <navbarthree></navbarthree>
-        
-        <div class="page-wrapper">
-            <indexhome />
+  <div class="main-wrapper">
+    <navbarthree></navbarthree>
 
-            <indexthreedestination />
+    <div class="page-wrapper">
+      <indexhome />
 
-            <indexoffer />
+      <indexthreedestination />
 
-            <indexpromo />
+      <indexoffer />
 
-            <indextestimonial />
+      <indexpromo />
 
-            <indexprice />
+      <indextestimonial />
 
-            <indexsubscribe />
+      <indexprice />
 
-            <indexactivity />
+      <indexsubscribe />
 
-            <navbarthreefooter />
+      <indexactivity />
 
-        </div>
+      <navbarthreefooter />
     </div>
+  </div>
 </template>

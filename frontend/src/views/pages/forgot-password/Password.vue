@@ -1,28 +1,28 @@
 <template>
-    <div class="main-wrapper">
-        <layouts></layouts>
+  <div class="main-wrapper">
+    <layouts></layouts>
 
-        <div class="page-wrapper">
-            <breadcrumb :title="title" :name="name" :text="text" :text1="text1" />
+    <div class="page-wrapper">
+      <breadcrumb :title="title" :name="name" :text="text" :text1="text1" />
 
-            <forgotpassword  />
+      <forgotpassword />
 
-            <foot />
+      <foot />
 
-            <scroll />
-        </div>
+      <scroll />
     </div>
+  </div>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            title: "Forgot Password",
-            text: "Home",
-            text1: "Forgot Password",
-            name: "/",
-        }
-    },
-}
+  data() {
+    return {
+      title: 'Forgot Password',
+      text: 'Home',
+      text1: 'Forgot Password',
+      name: '/',
+    };
+  },
+};
 </script>

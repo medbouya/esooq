@@ -1,23 +1,23 @@
 <template>
-    <div class="main-wrapper">
-        <navbarfour />
-        
-        <div class="page-wrapper">
-            <indexnow />
+  <div class="main-wrapper">
+    <navbarfour />
 
-            <indexcowork />
+    <div class="page-wrapper">
+      <indexnow />
 
-            <indexspace />
+      <indexcowork />
 
-            <indexfourclient />
+      <indexspace />
 
-            <indexfourpricing />
+      <indexfourclient />
 
-            <indexfourblog />
+      <indexfourpricing />
 
-            <indexfourfooter />
+      <indexfourblog />
 
-            <scroll />
-        </div>
+      <indexfourfooter />
+
+      <scroll />
     </div>
+  </div>
 </template>

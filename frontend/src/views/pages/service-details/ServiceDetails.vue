@@ -1,19 +1,17 @@
 <template>
-    <div class="main-wrapper">
-        <layouts></layouts>
+  <div class="main-wrapper">
+    <layouts></layouts>
 
-            <div class="page-wrapper">
-                <servicegallery />
+    <div class="page-wrapper">
+      <servicegallery />
 
-                <servicedescription />
+      <servicedescription />
 
-                <servicecontent />
+      <servicecontent />
 
-                <foot />
+      <foot />
 
-                <scroll />
-            </div>
-        
+      <scroll />
     </div>
+  </div>
 </template>
-

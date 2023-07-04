@@ -13,40 +13,41 @@ module.exports = (env = {}) => ({
   context: path.resolve(__dirname, 'src'),
   mode: env.production ? 'production' : 'development',
   entry: {
-    app: './main.js'
+    app: './main.js',
   },
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "[name].[hash:6].bundle.js",
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].[hash:6].bundle.js',
     publicPath: publicPath,
   },
   module: {
     rules: [
       {
         test: /\.vue$/,
-        use: 'vue-loader'
+        use: 'vue-loader',
       },
       {
         test: /\.js$/,
         exclude: /node_modules\/(?!bootstrap-vue\/src\/)/,
-        loader: "babel-loader"
+        loader: 'babel-loader',
       },
 
       {
         test: /\.css$/,
         use: ['vue-style-loader', 'css-loader'],
-     },
-      { // config for sass compilation
+      },
+      {
+        // config for sass compilation
         test: /\.scss$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader
+            loader: MiniCssExtractPlugin.loader,
           },
           'css-loader',
           {
-            loader: "sass-loader"
-          }
-        ]
+            loader: 'sass-loader',
+          },
+        ],
       },
       {
         test: /\.(png|jpg|gif)$/i,
@@ -61,25 +62,25 @@ module.exports = (env = {}) => ({
       },
       {
         test: /\.(woff|woff2|eot|ttf|svg)$/,
-        loader: 'url-loader?limit=100000'
-    },
+        loader: 'url-loader?limit=100000',
+      },
     ],
   },
   resolve: {
     extensions: ['.ts', '.js', '.vue', '.json'],
     alias: {
-      'vue': '@vue/runtime-dom',
+      vue: '@vue/runtime-dom',
       'bootstrap-vue$': 'bootstrap-vue/src/index.js',
       Assets: path.resolve(__dirname, 'src/assets/'),
-    }
+    },
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: './public/index.html'
+      template: './public/index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].css'
+      filename: '[name].css',
     }),
     new WebpackBar(),
     new VueLoaderPlugin(),
@@ -91,10 +92,10 @@ module.exports = (env = {}) => ({
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
-          chunks: 'all'
-        }
-      }
-    }
+          chunks: 'all',
+        },
+      },
+    },
   },
   devtool: 'source-map',
   devServer: {
@@ -106,8 +107,8 @@ module.exports = (env = {}) => ({
     quiet: true,
     overlay: {
       warnings: true,
-      errors: true
+      errors: true,
     },
     historyApiFallback: true,
-  }
+  },
 });

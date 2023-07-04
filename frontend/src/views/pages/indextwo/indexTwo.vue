@@ -1,34 +1,33 @@
 <template>
-    <div class="main-wrapper">
-        <navbartwoHeader></navbartwoHeader>
-        <navbartwo></navbartwo>
+  <div class="main-wrapper">
+    <navbartwoHeader></navbartwoHeader>
+    <navbartwo></navbartwo>
 
-        <div class="page-wrapper">
-            
-            <indexwedding />
+    <div class="page-wrapper">
+      <indexwedding />
 
-            <indexcelebrate />
-            
-            <indexvendor />
+      <indexcelebrate />
 
-            <indexpackage />
+      <indexvendor />
 
-            <indexportfolio />
+      <indexpackage />
 
-            <indextimeline />
+      <indexportfolio />
 
-            <weddingindexblog />
+      <indextimeline />
 
-            <indexappointment />
+      <weddingindexblog />
 
-            <weddingfooter />
+      <indexappointment />
 
-            <scroll />
-        </div>
+      <weddingfooter />
+
+      <scroll />
     </div>
+  </div>
 </template>
 <script>
-    export default {
-        name: 'index-2'
-    }
+export default {
+  name: 'index-2',
+};
 </script>

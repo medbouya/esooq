@@ -1,7 +1,5 @@
 <template>
-    <navbar />
+  <navbar />
 </template>
 
-<script>
-
-</script>
+<script></script>

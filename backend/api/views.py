@@ -3,6 +3,7 @@ from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
 from django_filters.rest_framework import DjangoFilterBackend
 from .models import Country, City, Category, Subcategory, Ad, Image, Tag
 from .serializers import (
@@ -63,6 +64,11 @@ class CityDetail(generics.RetrieveAPIView):
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.filter(is_deleted=False, is_active=True)
     serializer_class = CategorySerializer
+    permission_classes = [IsAuthenticated]
+
+    def perform_create(self, serializer):
+        user = self.request.user
+        serializer.save(user_id=user.id)
 
     @action(detail=True, methods=['put'])
     def soft_delete(self, request, pk=None):

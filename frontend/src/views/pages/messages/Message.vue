@@ -1,28 +1,28 @@
 <template>
-    <div class="main-wrapper">
-        <usernavbar />
+  <div class="main-wrapper">
+    <usernavbar />
 
-        <div class="page-wrapper">
-            <breadcrumb :title="title" :name="name" :text="text" :text1="text1" />
+    <div class="page-wrapper">
+      <breadcrumb :title="title" :name="name" :text="text" :text1="text1" />
 
-            <messagecontent />
+      <messagecontent />
 
-            <foot />
+      <foot />
 
-            <scroll />
-        </div>
+      <scroll />
     </div>
+  </div>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            title: "Messages",
-            text: "Home",
-            text1: "Messages",
-            name: "/",
-        }
-    },
-}
+  data() {
+    return {
+      title: 'Messages',
+      text: 'Home',
+      text1: 'Messages',
+      name: '/',
+    };
+  },
+};
 </script>

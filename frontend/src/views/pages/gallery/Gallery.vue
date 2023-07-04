@@ -1,29 +1,28 @@
 <template>
-    <div class="main-wrapper">
-        <layouts></layouts>
+  <div class="main-wrapper">
+    <layouts></layouts>
 
-        <div class="page-wrapper">
-            <breadcrumb :title="title" :name="name" :text="text" :text1="text1" />
-            
-            <gallerypage />
+    <div class="page-wrapper">
+      <breadcrumb :title="title" :name="name" :text="text" :text1="text1" />
 
-            <foot /> 
+      <gallerypage />
 
-            <scroll /> 
-        </div>
+      <foot />
+
+      <scroll />
     </div>
+  </div>
 </template>
-
 
 <script>
 export default {
-    data() {
-        return {
-            title: "Gallery",
-            text: "Home",
-            text1: "Gallery",
-            name: "/",
-        }
-    },
-}
+  data() {
+    return {
+      title: 'Gallery',
+      text: 'Home',
+      text1: 'Gallery',
+      name: '/',
+    };
+  },
+};
 </script>

@@ -1,13 +1,13 @@
 <template>
-    <div class="main-wrapper">
-        <layouts></layouts>
+  <div class="main-wrapper">
+    <layouts></layouts>
 
-        <div class="page-wrapper">
-            <blogcontent />
+    <div class="page-wrapper">
+      <blogcontent />
 
-            <foot />
+      <foot />
 
-            <scroll />
-        </div>
+      <scroll />
     </div>
+  </div>
 </template>
